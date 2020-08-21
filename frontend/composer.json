@@ -1,0 +1,12 @@
+{
+    "require": {
+        "tracy/tracy": "^2.5",
+        "guzzlehttp/guzzle": "~6.0",
+        "vlucas/phpdotenv": "^3.6"
+    },
+    "autoload": {
+	    "psr-4": {
+	       "App\\" : "app/classes/"
+	     }
+	}
+}

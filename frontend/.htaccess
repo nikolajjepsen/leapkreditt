@@ -1,0 +1,9 @@
+Options +FollowSymLinks -Indexes
+
+RewriteEngine On
+RewriteRule ^quote/recommendations/?$ quote.php
+RewriteRule ^recommendation/([0-9]+)/?$ click.php?loanId=$1
+RewriteRule ^l/([A-Za-z0-9_]+)/?$ shortened.php?code=$1
+
+RewriteRule ^app/api/config/?$ app/api/index.php
+RewriteRule ^app/api/config/([0-9]+)/?$ app/api/index.php?id=$1
